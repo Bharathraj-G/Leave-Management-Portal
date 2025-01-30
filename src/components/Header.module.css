@@ -1,0 +1,214 @@
+.bannariAmmanInstituteOfTecIcon {
+  height: 49px;
+  width: 60px;
+  position: relative;
+  object-fit: cover;
+}
+.leaveManagementPortal {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  white-space: nowrap;
+}
+.bannariAmmanInstituteOfTecParent,
+.portalTitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.portalTitle {
+  flex-direction: column;
+  padding: var(--padding-sm) 0 0;
+}
+.bannariAmmanInstituteOfTecParent {
+  flex-direction: row;
+  gap: var(--gap-base);
+}
+.frameChild {
+  height: 32px;
+  width: 131px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-blueviolet-200);
+  display: none;
+}
+.dashboard {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  font-family: var(--font-dm-sans);
+  color: var(--primary-white);
+  text-align: center;
+  display: inline-block;
+  min-width: 83px;
+  z-index: 1;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-5xl) var(--padding-7xs);
+  background-color: var(--color-blueviolet-200);
+  border-radius: var(--br-9xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent:hover {
+  background-color: var(--color-darkorchid);
+}
+.frameItem {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.leaveApply {
+  text-decoration: none;
+  width: 93px;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 93px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.rectangleGroup {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) var(--padding-lgi) var(--padding-7xs);
+  position: relative;
+  cursor: pointer;
+}
+.navbar,
+.navigation,
+.rectangleGroup {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar {
+  border-radius: var(--br-7xs);
+  background-color: var(--electric-violet-50);
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-7xs);
+  gap: var(--gap-xs);
+}
+.navigation {
+  width: 396px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-11xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  color: var(--color-blueviolet-200);
+}
+.bharathRajG {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 102px;
+  white-space: nowrap;
+}
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xs-5) 0 0;
+}
+.bharathRajG1 {
+  text-decoration: none;
+  align-self: stretch;
+  width: 102px;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.photo,
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; /* This makes the image perfectly round */
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 0; /* Removed padding to prevent distortion */
+  box-sizing: border-box;
+  background-image: url(/public/photo@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.user {
+  flex: 1;
+  gap: var(--gap-mini);
+}
+.header,
+.userWrapper {
+  box-sizing: border-box;
+  display: flex;
+}
+.userWrapper {
+  height: 46px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-11xs);
+}
+.header {
+  align-self: stretch;
+  background-color: var(--primary-white);
+  border-bottom: 1px solid var(--color-lightgray-100);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-61xl) var(--padding-sm);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary-grey);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 1125px) {
+  .navbar {
+    display: none;
+  }
+  .navigation {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .user {
+    display: none;
+  }
+  .header {
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}

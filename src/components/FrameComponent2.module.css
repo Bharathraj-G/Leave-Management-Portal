@@ -1,0 +1,108 @@
+.classAdvisor {
+  width: 103px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.drMalathiM,
+.emptyAdvisor {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.drMalathiM {
+  flex: 1;
+}
+.emptyAdvisor {
+  width: 56px;
+  display: inline-block;
+}
+.advisorName,
+.classAdvisorParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.advisorName {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-base);
+  color: var(--color-dimgray);
+}
+.classAdvisorParent {
+  height: 69px;
+  width: 170px;
+  flex-direction: column;
+  gap: var(--gap-8xl);
+}
+.phoneForwardedIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  min-height: 20px;
+}
+.call {
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.callWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.forward,
+.forward1 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--electric-violet-100);
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.forward {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--padding-5xs) var(--padding-6xl);
+}
+.forward1 {
+  padding: var(--padding-5xs) var(--padding-5xl);
+}
+.forward1,
+.forwardParent,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+}
+.forwardParent {
+  width: 105px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray);
+}
+.frameParent {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-xs) 0 var(--padding-3xs);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary-purple);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

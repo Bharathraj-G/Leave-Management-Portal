@@ -1,0 +1,112 @@
+.classAdvisor,
+.drMalathiM,
+.emptyContact {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 103px;
+}
+.drMalathiM,
+.emptyContact {
+  min-width: 98px;
+}
+.emptyContact {
+  min-width: 56px;
+}
+.drMalathiMParent,
+.roleNames {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.drMalathiMParent {
+  flex-direction: row;
+  gap: var(--gap-base);
+  color: var(--color-dimgray);
+}
+.roleNames {
+  flex-direction: column;
+  gap: var(--gap-8xl);
+}
+.phoneForwardedIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  min-height: 20px;
+}
+.call {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-dm-sans);
+  color: var(--color-dimgray);
+  text-align: left;
+  display: inline-block;
+  min-width: 25px;
+}
+.callButtons,
+.phoneForwardedParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.phoneForwardedParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-6xl);
+  background-color: var(--electric-violet-100);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.mail {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-dm-sans);
+  color: var(--color-dimgray);
+  text-align: left;
+  display: inline-block;
+  min-width: 27px;
+}
+.contactRoles,
+.forwardToInboxParent,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.forwardToInboxParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) var(--padding-5xl);
+  background-color: var(--electric-violet-100);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.contactRoles,
+.frameParent {
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.contactRoles {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-xs) 0 var(--padding-3xs);
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary-purple);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 450px) {
+  .contactRoles {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

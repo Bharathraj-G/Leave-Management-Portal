@@ -1,0 +1,89 @@
+.indicatorTypesChild {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  object-fit: contain;
+}
+.emptyIndicatorValues,
+.indicatorTypes {
+  align-self: stretch;
+  display: flex;
+  flex-shrink: 0;
+}
+.emptyIndicatorValues {
+  width: 29px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.indicatorTypes {
+  height: 65px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.pendingRequests {
+  width: 135px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.trackingMentorsApproval {
+  align-self: stretch;
+  height: 19px;
+  position: relative;
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+}
+.indicatorDetails,
+.indicatorsHeader,
+.indicatorsSubheader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.indicatorDetails {
+  width: 173px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary-grey);
+}
+.indicatorsHeader,
+.indicatorsSubheader {
+  flex: 1;
+  box-sizing: border-box;
+}
+.indicatorsSubheader {
+  height: 128px;
+  flex-direction: column;
+  padding: 0 0 var(--padding-44xl);
+  gap: var(--gap-base);
+}
+.indicatorsHeader {
+  box-shadow: 0 2px 20px rgba(229, 229, 229, 0.25);
+  border-radius: var(--br-xs);
+  background-color: var(--primary-white);
+  border: 1px solid var(--color-whitesmoke);
+  flex-direction: row;
+  padding: var(--padding-lg) var(--padding-5xl);
+  min-width: 146px;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--primary-purple);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 825px) {
+  .emptyIndicatorValues {
+    font-size: var(--font-size-21xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .emptyIndicatorValues {
+    font-size: var(--font-size-11xl);
+  }
+}

@@ -1,0 +1,24 @@
+.approved1 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-dm-sans);
+  color: var(--color-mediumseagreen);
+  text-align: left;
+  display: inline-block;
+  min-width: 65px;
+}
+.approved {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-xl);
+  background-color: var(--color-honeydew-200);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.approved:hover {
+  background-color: var(--color-honeydew-100);
+}

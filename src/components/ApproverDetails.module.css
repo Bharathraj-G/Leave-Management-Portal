@@ -1,0 +1,64 @@
+.span {
+  color: var(--color-black);
+}
+.span1 {
+  color: var(--color-tomato);
+}
+.leaveTypeContainer {
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.dropdown {
+  width: 131px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-5) 0 0;
+  box-sizing: border-box;
+}
+.arrowDropDownIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.approver,
+.approverDetails,
+.approvers {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.approver {
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.approverDetails,
+.approvers {
+  align-self: stretch;
+  justify-content: flex-start;
+}
+.approvers {
+  border-radius: var(--br-5xs);
+  border: 2px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-lg) var(--padding-6xs)
+    var(--padding-11xl);
+  color: var(--color-dimgray);
+}
+.approverDetails {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary-purple);
+  font-family: var(--font-dm-sans);
+}

@@ -1,0 +1,139 @@
+.span {
+  color: var(--color-black);
+}
+.span1 {
+  color: var(--color-tomato);
+}
+.enterAReason,
+.reason {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.reason {
+  height: 21px;
+}
+.enterAReason {
+  width: 109px;
+}
+.reasonInput,
+.reasonParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.reasonInput {
+  height: 110px;
+  border-radius: var(--br-5xs);
+  border: 2px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-13xl) var(--padding-58xl);
+  color: var(--color-dimgray);
+}
+.reasonParent {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.cloudUploadIcon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.uploadAnImage {
+  margin: 0;
+}
+.uploadAnImageContainer {
+  height: 42px;
+  width: 265px;
+  position: relative;
+  line-height: 21px;
+  font-weight: 500;
+  display: inline-block;
+}
+.uploadParent {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 2px dashed var(--color-gainsboro-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) var(--padding-41xl) var(--padding-11xl);
+  gap: var(--gap-4xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray);
+}
+.reset {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-weight: 500;
+}
+.resetButton {
+  height: 44px;
+  width: 128px;
+  border-radius: var(--br-5xs);
+  background-color: var(--electric-violet-50);
+  justify-content: flex-start;
+  padding: var(--padding-xs-5) var(--padding-23xl);
+  box-sizing: border-box;
+}
+.approverDetailsParent,
+.buttons,
+.resetButton,
+.submitButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.submitButton {
+  height: 44px;
+  width: 128px;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-purple);
+  justify-content: flex-start;
+  padding: var(--padding-xs-5) var(--padding-17xl);
+  box-sizing: border-box;
+  color: var(--primary-white);
+}
+.approverDetailsParent,
+.buttons {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.approverDetailsParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  flex-shrink: 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--primary-purple);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 450px) {
+  .uploadParent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .buttons,
+  .uploadParent {
+    flex-wrap: wrap;
+  }
+}

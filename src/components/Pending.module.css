@@ -1,0 +1,30 @@
+.approved1 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-dm-sans);
+  color: var(--primary-purple);
+  text-align: left;
+  display: inline-block;
+  min-width: 53px;
+}
+.approved,
+.pending {
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+}
+.approved {
+  background-color: var(--electric-violet-50);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-14xl);
+}
+.pending {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-11xs) 0 0;
+  background-color: transparent;
+  align-items: flex-start;
+  justify-content: flex-start;
+}

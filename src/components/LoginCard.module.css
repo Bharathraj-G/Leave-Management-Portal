@@ -1,0 +1,117 @@
+.logoIcon {
+  width: 176px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+}
+.leaveManagementPortal {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+}
+.loginContainer {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg);
+  gap: var(--gap-45xl);
+}
+.alertCircleIcon {
+  height: 20px;
+  width: 20px;
+  min-height: 20px;
+}
+.alertCircleIcon,
+.pleaseUseYour {
+  position: relative;
+}
+.alertCircleParent,
+.alertMessage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.alertCircleParent {
+  gap: var(--gap-xs);
+}
+.signIn {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 56px;
+}
+.signInButtonContainer {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-purple);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mid) var(--padding-xl);
+  white-space: nowrap;
+}
+.signInButtonContainerWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  color: var(--primary-white);
+}
+.formContainer,
+.loginCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formContainer {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+}
+.loginCard {
+  height: 520px;
+  width: 390px;
+  border-radius: var(--br-base);
+  background-color: var(--primary-white);
+  justify-content: center;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  gap: var(--gap-98xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-dm-sans);
+}
+@media screen and (max-width: 525px) {
+  .loginCard {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .leaveManagementPortal {
+    font-size: var(--font-size-lgi);
+  }
+  .loginContainer {
+    gap: var(--gap-13xl);
+  }
+  .loginCard {
+    gap: var(--gap-39xl);
+  }
+}
